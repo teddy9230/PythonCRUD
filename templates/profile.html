@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<h1>個人資料</h1>
+<div>
+    <p>您的會員資料:</p>
+    <table>
+        <tr>
+            <td>使用者姓氏: </td>
+            <td>{{ account['fullname'] }}</td>
+        </tr>
+        <tr>
+            <td>使用者帳號: </td>
+            <td>{{ account['username'] }}</td>
+        </tr>
+        <tr>
+            <td>使用者密碼: </td>
+            <td>{{ account['password'] }}</td>
+        </tr>
+        <tr>
+            <td>使用者信箱: </td>
+            <td>{{ account['email'] }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
